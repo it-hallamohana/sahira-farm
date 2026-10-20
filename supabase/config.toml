@@ -1,0 +1,6 @@
+project_id = "sahira-farm"
+
+[functions.rfid-ingest]
+# ESP sends a per-device token, not a Supabase user JWT.
+# The handler and database validate that token before accepting any data.
+verify_jwt = false
